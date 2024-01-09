@@ -1,0 +1,16 @@
+{
+  "packages": [
+    "python@latest",
+    "poetry@latest"
+  ],
+  "shell": {
+    "init_hook": [
+      "poetry install"
+    ],
+    "scripts": {
+      "reixi": [
+        "poetry run reixi"
+      ]
+    }
+  }
+}
