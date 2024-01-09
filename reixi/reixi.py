@@ -125,7 +125,7 @@ class Core(commands.Cog):
             loaded_modules = await ctx.bot.db.get_server_specific_modules(ctx.guild.id)
 
         for module_name, module in ctx.bot.cogs.items():
-            if (module_name.lower() not in loaded_modules) and (module_name != "core"):
+            if (module_name.lower() not in loaded_modules) and (module_name.lower() != "core"):
                 continue
 
             if (len(args) > 0) and (module_name.lower() not in args):
