@@ -13,7 +13,7 @@ from pydantic import BaseModel
 ResultType = TypeVar("ResultType")
 
 
-VERSION: Final[tuple[int, int, int]] = (6, 0, 0)
+VERSION: Final[tuple[int, int, int]] = (6, 0, 1)
 VERSION_SUFFIX: Final[str] = ""
 
 NAME: str = "reixi"
