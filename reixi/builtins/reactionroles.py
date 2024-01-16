@@ -154,7 +154,6 @@ class ReactionRoles(commands.Cog):
     @commands.Cog.listener()
     async def on_ready(self) -> None:
         logger.debug("creating reaction handler tasks")
-        self.background_tasks.append(asyncio.create_task(self.reaction_handler()))
         self.background_tasks.append(
             asyncio.create_task(self.reaction_handler(remove=True))
         )
