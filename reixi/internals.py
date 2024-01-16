@@ -220,7 +220,7 @@ async def is_user_privileged(ctx: Context, module: str = "") -> bool:
 
 def version_string() -> str:
     """returns a nicer version string"""
-    return f"{VERSION[0]}{VERSION[1]}{VERSION[2]}".rstrip(".0") + VERSION_SUFFIX
+    return f"{VERSION[0]}.{VERSION[1]}.{VERSION[2]}".rstrip(".0") + VERSION_SUFFIX
 
 
 def figure_log_dir() -> Result[Path]:
