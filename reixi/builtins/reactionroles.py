@@ -158,8 +158,9 @@ class ReactionRoles(commands.Cog):
         self.background_tasks.append(
             asyncio.create_task(self.reaction_handler(remove=True))
         )
-        logger.debug("creating cleanup handler task")
-        self.background_tasks.append(asyncio.create_task(self.cleanup_handler()))
+        # TODO: fix this; messages are found dead when they are not
+        # logger.debug("creating cleanup handler task")
+        # self.background_tasks.append(asyncio.create_task(self.cleanup_handler()))
 
     async def cog_load(self) -> None:
         if self.bot.is_ready():
