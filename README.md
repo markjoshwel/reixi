@@ -150,5 +150,5 @@ write your own database backend by implementing and extending the abstract base 
 reixi is licenced under the GNU Affero General Public Licence v3.0 or later.  
 for more information, please refer to [LICENCE.md](LICENCE.md), or the [GNU website](https://www.gnu.org/licenses/agpl.html).
 
-if you run reixi or a modified version of it, you **must** provide the source code to the users of the bot.  
-this is a requirement of the Affero General Public Licence licence.
+if you run reixi or a modified version of it, you **must** provide the source code to the users of the bot,
+this is a requirement of the GNU AGPL.
